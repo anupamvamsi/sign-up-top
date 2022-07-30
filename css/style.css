@@ -148,7 +148,7 @@ input:focus {
   outline: none;
   border-radius: 0.4em;
   border-bottom: none;
-  box-shadow: 0em 0.15em #e48d36;
+  box-shadow: inset 0em -0.15em #e48d36;
 }
 
 .btn-create:hover {
