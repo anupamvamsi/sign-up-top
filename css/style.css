@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "NorseBold";
+  src: url("../font/Norse-Bold.otf");
+}
+
 *,
 *::before,
 *::after {
@@ -31,6 +36,30 @@ a:focus-visible {
   display: flex;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+
+  background-color: #68340060;
+
+  margin-top: 7.5em;
+
+  height: 12rem;
+  width: 100%;
+}
+
+.logo > h1 {
+  font-family: NorseBold, sans-serif;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.logo > img {
+  width: 6rem;
+}
+
 .image-container {
   background-image: url("../img/frank-mckenna_unsplash.jpg");
 
@@ -60,23 +89,18 @@ a:focus-visible {
 
   /* occupy remaining space instead of only what's necessary */
   width: 100%;
-
-  /* background-color: red; */
 }
 
 .intro-container {
   margin: 10em 12em 3em 3em;
-  /* background-color: blue; */
 }
 
 .intro-text {
   font-size: 1.3rem;
   font-weight: bold;
-  /* background-color: green; */
 }
 
 .form-container {
-  /* background-color: blueviolet; */
   background-color: rgb(255, 255, 255);
   box-shadow: 0.2em 0.2em 0.5em 0em lightgray;
   padding: 1.5em 0em 0em 0em;
@@ -87,7 +111,6 @@ a:focus-visible {
   font-size: 1.3rem;
 
   margin: 0em 12em 2em 2.3em;
-  /* background-color: coral; */
 }
 
 .signup-fields {
@@ -99,8 +122,6 @@ a:focus-visible {
   align-items: flex-start;
 
   gap: 1rem;
-
-  /* background-color: yellow; */
 }
 
 .signup-fields > div {
@@ -119,13 +140,14 @@ input {
   width: 20rem;
   height: 2rem;
   font-size: inherit;
-  border: solid 2px #e48d36;
+  border: solid 2px #e5e7eb;
   border-radius: 0.4em;
 }
 
 input:focus {
   outline: none;
   border-radius: 0.4em;
+  border-bottom: none;
   box-shadow: 0em 0.15em #e48d36;
 }
 
@@ -159,7 +181,6 @@ input:focus {
 
 .acc-exists-text {
   margin: 2em 12em 2em 3em;
-  /* background-color: cadetblue; */
 }
 
 .acc-exists-text a {
