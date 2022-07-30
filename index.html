@@ -9,94 +9,98 @@
   </head>
 
   <body>
-    <div class="image-container">
-      <div class="logo-container">
+    <div class="container">
+      <div class="image-container">
         <!-- placeholder -->
+        <!-- <img
+          class="image"
+          src="./img/mew.jpg"
+          alt="It's a kitty!"
+        /> -->
+
+        <div class="credit">
+          photo by
+          <a
+            href="https://unsplash.com/@frankiefoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >frank mckenna</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/8DMuvdp-vso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >unsplash</a
+          >
+        </div>
       </div>
 
-      <!-- <img
-        class="image"
-        src="./img/nick-scheerbart_unsplash.jpg"
-        alt="It's a kitty!"
-      /> -->
-
-      <div class="credit">
-        <!-- Photo by <a href="https://unsplash.com/@nck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Scheerbart</a> on <a href="https://unsplash.com/s/photos/sunset?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-        
-        Photo by <a href="https://unsplash.com/@frankiefoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">frank mckenna</a> on <a href="https://unsplash.com/photos/8DMuvdp-vso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-      </div>
-    </div>
-
-    <div class="content-container">
-      <div class="intro-container">
-        <p class="intro-text">
-          This is not a real online service! You, however, know, that you need
-          something like this to help you realize your deepest dreams.
-          <br />
-          Sign up <em>now</em> to get started.
-          <br />
-          <br />
-          You <em>know</em> you want to.
-        </p>
-      </div>
-
-      <div class="form-container">
-        <form class="signup-form" action="#" method="post">
-          <h1 class="form-heading"><strong>Let's do this!</strong></h1>
-
-          <div class="signup-fields">
-            <!-- <div> -->
-            <div>
-              <label for="first_name">First name</label>
-              <br />
-              <input type="text" id="first_name" name="first_name" required />
-            </div>
-
-            <!-- </div> -->
-
-            <!-- <div> -->
-            <div>
-              <label for="last_name">Last name</label>
-              <br />
-              <input type="text" id="last_name" name="last_name" required />
-            </div>
-
-            <div>
-              <label for="user_email">Email</label>
-              <br />
-              <input type="email" id="user_email" name="user_email" required />
-            </div>
-
-            <div>
-              <label for="user_phone">Phone Number</label>
-              <br />
-              <input type="tel" name="user_phone" id="user_phone" required />
-            </div>
-
-            <div>
-              <label for="user_pwd">Password</label>
-              <br />
-              <input type="password" name="user_pwd" id="user_pwd" required />
-            </div>
-
-            <div>
-              <label for="cnf_pwd">Confirm Password</label>
-              <br />
-              <input type="password" name="cnf_pwd" id="cnf_pwd" required />
-            </div>
-            <!-- </div> -->
-
-            <!-- <li></li> -->
-          </div>
+      <div class="content-container">
+        <div class="intro-container">
+          <p class="intro-text">
+            This is not a real online service! You, however, know, that you need
+            something like this to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started.
+            <br />
+            <br />
+            You <em>know</em> you want to.
+          </p>
         </div>
 
-          <button class="btn-create" type="submit">Create Account</button>
-        </form>
+        <div class="form-container">
+          <form class="signup-form" action="#" method="post">
+            <h1 class="form-heading"><strong>Let's do this!</strong></h1>
 
-      <p class="acc-exists-text">
-        Already have an account? <strong><a href="#">Login!</a></strong>
-      </p>
+            <div class="signup-fields"> <!-- white rectangle start-->
+              <div>
+                <label for="first_name">First name</label>
+                <br />
+                <input type="text" id="first_name" name="first_name" required />
+              </div>
+
+              <div>
+                <label for="last_name">Last name</label>
+                <br />
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+
+              <div>
+                <label for="user_email">Email</label>
+                <br />
+                <input
+                  type="email"
+                  id="user_email"
+                  name="user_email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="user_phone">Phone Number</label>
+                <br />
+                <input type="tel" name="user_phone" id="user_phone" required />
+              </div>
+
+              <div>
+                <label for="user_pwd">Password</label>
+                <br />
+                <input type="password" name="user_pwd" id="user_pwd" required />
+              </div>
+
+              <div>
+                <label for="cnf_pwd">Confirm Password</label>
+                <br />
+                <input type="password" name="cnf_pwd" id="cnf_pwd" required />
+              </div>
+            </div>
+          </div> <!-- white rectrangle end -->
+          <!-- I want the div to end here so as to not have the button inside the white rectangular box 
+          The button should however be inside the form so as to be able to submit the form, else if it is outside the form tags, it is useless -->
+            <button class="btn-create" type="submit">Create Account</button>
+          </form>
+
+        <p class="acc-exists-text">
+          Already have an account? <strong><a href="#">Login!</a></strong>
+        </p>
+      </div>
     </div>
   </body>
 </html>
